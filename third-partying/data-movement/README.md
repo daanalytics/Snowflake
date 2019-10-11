@@ -6,3 +6,4 @@ Check out the the blog related to this topic on the [**DaAnalytics**-blog]( http
 
 - [datafiles_for_sh_tables.zip](https://github.com/daanalytics/snowflake/blob/master/third-partying/data-movement/datafiles_for_sh_tables.zip) for upload into AWS S3 bucket 
 - [sf_demo_sh.sql](https://github.com/daanalytics/snowflake/blob/master/third-partying/data-movement/sf_demo_sh.sql) for creating tables and constraints in Snowflake
+- [copy_stage_into_sf_demo_sh.sql](https://github.com/daanalytics/snowflake/blob/master/third-partying/data-movement/copy_stage_into_sf_demo_sh.sql) for copying data from stage into Snowflake
