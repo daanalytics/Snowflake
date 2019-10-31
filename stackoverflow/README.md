@@ -5,4 +5,3 @@ The user forum of Snowflake is on [**Stack Overflow**](https://stackoverflow.com
 Find scripts related to various questions here.
 
 [**Copying data from AWS S3 Parquet file - limiting to just a few rows**](https://stackoverflow.com/questions/58596307/copying-data-from-aws-s3-parquet-file-limiting-to-just-a-few-rows)
-  - 
