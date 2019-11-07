@@ -5,3 +5,4 @@ Find scripts in this folder related to the **SqlDBM partnership with Snowflake**
 In this folder - Forward-, and Reverse engineering scripts, based on the **[SqlDBM partnership with Snowflake]( https://daanalytics.nl/sqldbm-partnership-with-snowflake/)**-blog
 
   * [SqlDBM_ForwardEngineer.sql](https://github.com/daanalytics/snowflake/blob/master/third-partying/SqlDBM/SqlDBM_ForwardEngineer.sql)
+  * [SqlDBM_ReverseEngineer.sql](https://github.com/daanalytics/snowflake/blob/master/third-partying/SqlDBM/SqlDBM_ReverseEngineer.sql)
