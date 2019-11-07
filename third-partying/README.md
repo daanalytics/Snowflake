@@ -6,5 +6,5 @@ Find scripts in this folder related to the topic on the **DaAnalytics**-blog; [T
 
 **[Data Movement](https://github.com/daanalytics/snowflake/tree/master/third-partying/data-movement)**, based on the **[Copy AWS S3 into Snowflake](https://daanalytics.nl/copy-aws-s3-into-snowflake/)**-blog.
 
-**[SqlDBM]()
+**[SqlDBM](https://github.com/daanalytics/snowflake/tree/master/third-partying/SqlDBM)**, based on the **[SqlDBM partnership with Snowflake]( https://daanalytics.nl/sqldbm-partnership-with-snowflake/)**-blog.
 
