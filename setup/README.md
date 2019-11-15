@@ -6,3 +6,5 @@ In this folder the following scripts:
 
 * Setup the 2nd Account Admin User; [**AccountAdmin.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/AccountAdmin.sql)
 * Define Resource Monitors; [**ResourceMonitors.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/ResourceMonitors.sql)
+* Creating Roles; [**Roles.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/Roles.sql)
+
