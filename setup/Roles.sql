@@ -11,27 +11,32 @@ USE ROLE SECURITYADMIN
 ----
 --
  -- CDWA - Cloud Data Warehouse Administrator 
-CREATE ROLE CDWA
+CREATE OR REPLACE ROLE CDWA
+COMMENT = ' Cloud Data Warehouse Administrator' 
 ;
 
 --
 -- DEVELOPER - Developer role to load data into Snowflake
-CREATE ROLE DEVELOPER
+CREATE OR REPLACE ROLE  DEVELOPER
+COMMENT = 'Developer role to load data into SnowflakeDeveloper role to load data into Snowflake'
 ;
 
 --
 -- ANALYST - Analyst role to query and view the data
-CREATE ROLE ANALYST
+CREATE OR REPLACE ROLE  ANALYST
+COMMENT = 'Analyst role to query and view the dataAnalyst role to query and view the data'
 ;
 
 --
 -- ELT_TOOL - Data Integration role to load data into Snowflake
-CREATE ROLE ELT_TOOL
+CREATE OR REPLACE ROLE  ELT_TOOL
+COMMENT = 'Data Integration role to load data into SnowflakeData Integration role to load data into Snowflake'
 ;
 
 --
 -- BI_TOOL - BI Tool role to visualize the data
-CREATE ROLE BI_TOOL
+CREATE OR REPLACE ROLE  BI_TOOL
+COMMENT = 'BI Tool role to visualize the dataBI Tool role to visualize the data'
 ;
 
 
