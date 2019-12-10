@@ -5,3 +5,7 @@ Find scripts and snippets in this folder to secure your Cloud-storage without sh
 ![SF-blog Credential-less Stages](https://github.com/daanalytics/snowflake/blob/master/pictures/SF-blog-Credential-less-stages.png)
 
 In this folder the following scripts:
+
+I will make an update to the previous blog; [**Copy AWS S3 into Snowflake**](https://daanalytics.nl/copy-aws-s3-into-snowflake/)
+
+
