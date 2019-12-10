@@ -6,6 +6,9 @@ Find scripts and snippets in this folder to secure your Cloud-storage without sh
 
 In this folder the following scripts:
 
-I will make an update to the previous blog; [**Copy AWS S3 into Snowflake**](https://daanalytics.nl/copy-aws-s3-into-snowflake/)
 
 
+I will make an update to a blog I created earlier; [**Copy AWS S3 into Snowflake**](https://daanalytics.nl/copy-aws-s3-into-snowflake/)
+
+
+Read more details in the Snowflake [**documentation**](https://docs.snowflake.net/manuals/release-notes/2019-11.html#secure-credential-less-access-to-external-stages-general-availability).
