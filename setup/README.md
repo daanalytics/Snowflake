@@ -8,3 +8,4 @@ In this folder the following scripts:
 * Define Resource Monitors; [**ResourceMonitors.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/ResourceMonitors.sql)
 * Creating Roles; [**Roles.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/Roles.sql)
 * Creating RolesHierarchy; [**RoleHierarchy.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/RolesHierarchy.sql)
+* Creating [Users](https://github.com/daanalytics/snowflake/blob/master/setup/usersREADME.md);  [**Users.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/RolesHierarchy.sql)
