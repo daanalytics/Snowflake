@@ -10,3 +10,13 @@ In this folder the following scripts:
 * Creating RolesHierarchy; [**RoleHierarchy.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/RolesHierarchy.sql)
 * Creating Sandbox [Users](https://github.com/daanalytics/snowflake/blob/master/setup/usersREADME.md);  [**Users.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/Users.sql)
 * Granting Roles to Sandbox Users; [**GrantingRoles.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/GrantingRoles.sql) 
+
+
+
+Next, follow Venkatesh Sekar's tips and try the following:
+
+* [Using the sample data](https://docs.snowflake.net/manuals/user-guide/sample-data-using.html)
+* [Creating tables](https://docs.snowflake.net/manuals/sql-reference/sql/create-table.html)
+* [Creating internal stages](https://docs.snowflake.net/manuals/sql-reference/sql/create-stage.html)
+* [Loading data from stage](https://docs.snowflake.net/manuals/user-guide/data-load-local-file-system-copy.html)
+* [Interacting with the data and getting to know Snowflake](https://docs.snowflake.net/manuals/user-guide/ui-using.html)
