@@ -9,4 +9,4 @@ In this folder the following scripts:
 * Creating Roles; [**Roles.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/Roles.sql)
 * Creating RolesHierarchy; [**RoleHierarchy.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/RolesHierarchy.sql)
 * Creating Sandbox [Users](https://github.com/daanalytics/snowflake/blob/master/setup/usersREADME.md);  [**Users.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/Users.sql)
-* Granting Roles to Sandbox Users; [**GrantingRoles.sql](https://github.com/daanalytics/snowflake/blob/master/setup/GrantingRoles.sql) 
+* Granting Roles to Sandbox Users; [**GrantingRoles.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/GrantingRoles.sql) 
