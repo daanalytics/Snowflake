@@ -11,7 +11,7 @@ In this folder the following scripts:
 * Creating Sandbox [Users](https://github.com/daanalytics/snowflake/blob/master/setup/usersREADME.md);  [**Users.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/Users.sql)
 * Granting Roles to Sandbox Users; [**GrantingRoles.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/GrantingRoles.sql) 
 * Creating Warehouses; [**Warehouses.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/Warehouses.sql) 
-
+* Creating Databases; [**Databases.sql**](https://github.com/daanalytics/snowflake/blob/master/setup/Databases.sql) 
 
 
 Next, follow Venkatesh Sekar's tips and try the following:
