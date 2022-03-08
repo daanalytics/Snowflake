@@ -1,0 +1,11 @@
+{"secrets":
+    {
+        "account"   : "<account",
+        "user"      : "<user>",
+        "warehouse" : "<warehouse>",
+        "role"      : "<role>",
+        "database"  : "<database>",
+        "schema"    : "<schema>",
+        "password"  : "<password>"
+      }
+}
