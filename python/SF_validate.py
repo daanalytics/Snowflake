@@ -2,10 +2,10 @@
 import snowflake.connector
 import json
 
-
+# Get the credentials
 config_location = '<path to credentials-file>'
 
-config = json.loads(open(str(config_location+'/cred.json')).read())
+config = json.loads(open(str(config_location+'/<credentials filename>')).read())
 
 username = config['secrets']['username']
 password = config['secrets']['password']
