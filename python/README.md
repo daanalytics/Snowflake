@@ -1,6 +1,6 @@
 README.md
 
-# Using Python and Snowflake together
+# Using Python and Snowflake ❄️ together
 
 Python and Snowflake go well together. Check various scripts and examples here.
 
