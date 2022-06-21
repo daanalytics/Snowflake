@@ -1,7 +1,0 @@
-{"user"     : "python",
- "password" : "12BeSecure",
- "account"  : "ja75028.west-europe.azure",
- "role"     : "datascience",
- "database" : "demo_db",
- "warehouse": "analytics_wh"
-}
