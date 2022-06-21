@@ -11,7 +11,7 @@ import snowflake.connector
 import json
 
 # Get the credentials
-config_location = '.streamlit'
+config_location = 'python/streamlit/.streamlit'
 
 config = json.loads(open(str(config_location+'/streamlit.toml')).read())
 
