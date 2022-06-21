@@ -8,26 +8,14 @@ Created on Wed Mar  2 15:17:57 2022
 
 import streamlit as st
 import snowflake.connector
-import json
 
-# Get the credentials
-config_location = '/app/snowflake/python/streamlit/.streamlit'
+# Initialize connection.
+# Uses st.experimental_singleton to only run once.
+@st.experimental_singleton
+def init_connection():
+    return snowflake.connector.connect(**st.secrets["snowflake"])
 
-config = json.loads(open(str(config_location+'/streamlit.toml')).read())
-
-username    = config['secrets']['username']
-password    = config['secrets']['password']
-account     = config['secrets']['account']
-role        = config['secrets']['role']
-
-# Connect to Snowflake
-
-conn = snowflake.connector.connect(
-    user        = username,
-    password    = password,
-    account     = account,
-    role        = role
-    )
+conn = init_connection()
 
 # Connect to DEMO_DB database
 conn.cursor().execute("CREATE DATABASE IF NOT EXISTS demo_db")
