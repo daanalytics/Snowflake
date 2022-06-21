@@ -4,7 +4,7 @@
 
 # Ignore Snowflake Credentials file 
 
-/.streamlit/cred.json
+.streamlit/cred.json
 
 # Ignoring DS_Store files
 
