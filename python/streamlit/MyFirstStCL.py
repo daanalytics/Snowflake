@@ -18,25 +18,10 @@ def init_connection():
 conn = init_connection()
 
 # Connect to DEMO_DB database
-conn.cursor().execute("CREATE DATABASE IF NOT EXISTS demo_db")
-
 conn.cursor().execute("USE DATABASE demo_db")
 
 # Connect to PETS schema
-conn.cursor().execute("CREATE SCHEMA IF NOT EXISTS pets")
-
 conn.cursor().execute("USE SCHEMA pets")
-
-# Create table PETS
-conn.cursor().execute(
-    "CREATE OR REPLACE TABLE "
-    "PETS(NAME            varchar(80),"
-    "     PET             varchar(80)"
-    "    )")
-
-# Insert into table PETS
-conn.cursor().execute(
-    "INSERT INTO PETS VALUES ('Mary', 'dog'), ('John', 'cat'), ('Robert', 'bird')")
 
 # Perform query.
 # Uses st.cache to only rerun when the query changes or after 10 min.
