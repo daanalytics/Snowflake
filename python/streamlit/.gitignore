@@ -1,3 +1,7 @@
-# Ignore Stremlit Secrets file 
+# Ignore Streamlit Secrets file 
 
 .streamlit/secrets.toml
+
+# Ignore Snowflake Credentials file 
+
+.streamlit/cred.json
