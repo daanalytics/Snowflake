@@ -1,10 +1,10 @@
 # Ignore Streamlit Secrets file 
 
-./.streamlit/secrets.toml
+.streamlit/secrets.toml
 
 # Ignore Snowflake Credentials file 
 
-./.streamlit/cred.json
+/.streamlit/cred.json
 
 # Ignoring DS_Store files
 
