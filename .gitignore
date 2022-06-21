@@ -1,2 +1,4 @@
+python/streamlit/.streamlit/
+
 python/streamlit/.streamlit/cred.json
 python/streamlit/.streamlit/secrets.toml
