@@ -7,7 +7,7 @@ import streamlit as st
 import pandas as pd
 
 workdir = os.getcwd()
-conndir = workdir + '/_streamlit/'
+conndir = workdir + '/.streamlit/'
 connfile = conndir + 'cred.json'
 
 # Create Session object
