@@ -1,9 +1,0 @@
-# .streamlit/cred.json
-
-{"user"     : "python",
- "password" : "xxxxxx",
- "account"  : "xxxxxx.west-europe.azure",
- "role"     : "datascience",
- "database" : "demo_db",
- "warehouse": "analytics_wh"
-}
