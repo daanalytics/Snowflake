@@ -1,4 +1,4 @@
 .DS_Store
 
-python/streamlit/.streamlit/cred.json
-python/streamlit/.streamlit/secrets.toml
+python/streamlit/_streamlit/cred.json
+python/streamlit/_streamlit/secrets.toml
