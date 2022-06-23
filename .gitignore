@@ -3,5 +3,5 @@
 python/streamlit/_streamlit/cred.json
 python/streamlit/_streamlit/secrets.toml
 
-python/streamlit/.streamlit/cred.json
-python/streamlit/.streamlit/secrets.toml
+.streamlit/cred.json
+.streamlit/secrets.toml
