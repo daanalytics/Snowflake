@@ -25,7 +25,7 @@ select t.metadata$filename
 from   @ffc_c2_stage (file_format => 'ffc_c2_file_format', pattern=>'challenge_2/employees.parquet') t
 ;
 
--- Create table with VARIANT-column
+-- Create table with columnd from .parquet
 create table ffc_c2_table
 (city varchar
 , country varchar
