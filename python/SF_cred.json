@@ -1,6 +1,6 @@
 {"secrets":
     {
-        "account"   : "<account",
+        "account"   : "<account>",
         "user"      : "<user>",
         "warehouse" : "<warehouse>",
         "role"      : "<role>",
