@@ -8,4 +8,4 @@
 
 ### Streamlit Applications
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_red.svg)](https://daanal-presentationsbuild-localcodestreamlit-cloud-pets-tdu9c0.streamlit.app)
+* Streamlit Pets [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_red.svg)](https://daanal-presentationsbuild-localcodestreamlit-cloud-pets-tdu9c0.streamlit.app)
