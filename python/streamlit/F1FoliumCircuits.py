@@ -17,26 +17,19 @@ st.set_page_config(
     }
 )
 
+# Initialize connection.
+# Uses st.experimental_singleton to only run once.
+@st.experimental_singleton
+def init_connection():
+    return snowflake.connector.connect(**st.secrets["snowflake"])
+
 # Create context 
 def create_sf_session_object():
 
     if "snowflake_context" not in st.session_state:
     
-        # Setting up Snowflake connection 
-
-        username    = st.secrets["user"]
-        password    = st.secrets["password"]
-        account     = st.secrets["account"]
-        role        = st.secrets["role"]
-
-        # Connect to Snowflake
-
-        ctx = snowflake.connector.connect(
-            user        = username,
-            password    = password,
-            account     = account,
-            role        = role
-        )
+        ctx = init_connection()
+        
         st.session_state['snowflake_context'] = ctx
 
     else: 
