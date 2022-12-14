@@ -8,7 +8,7 @@ from streamlit_folium import st_folium
 import pycountry_convert as pc
 
 # Setup web page - App Title, Page Title and Page Layout
-APP_TITLE = 'Plotting F1 Circuit Locations into a map using Folium'
+APP_TITLE = 'Plotting F1 Circuit Locations into a map on Streamlit Cloud using Folium'
 st.set_page_config(
     page_title='F1 Circuits', 
     layout='wide',
@@ -244,7 +244,7 @@ if __name__ == "__main__":
     # Draw the 'World' folium Map
     # draw_folium_map(map_type)
 
-    st.title('Plotting F1 Circuit Locations into a map using Folium')
+    st.title('Plotting F1 Circuit Locations into a map on Streamlit Cloud using Folium')
     
     if map_type == 'World':
      
