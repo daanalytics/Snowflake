@@ -5,6 +5,6 @@ pyarrow<8.1.0,>=8.0.0
 streamlit==1.15.2
 #pandas==1.5.2
 numpy==1.23.0
-folium==0.13.0
+folium==0.14.0
 streamlit-folium==0.8.1
 pycountry-convert==0.7.2
