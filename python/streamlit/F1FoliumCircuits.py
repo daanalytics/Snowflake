@@ -24,8 +24,8 @@ def create_sf_session_object():
     if "snowflake_context" not in st.session_state:
     
         # Setting up Snowflake connection 
-        conn_location = '/Users/daanbakboord/Library/Mobile Documents/com~apple~CloudDocs/Seni_BV/Daanalytics/R&D/GitHub/Snowflake/Snowflake/python/streamlit/_streamlit'
-        credential_file = 'cred.json'
+        conn_location = '<CONN_LOC>'
+        credential_file = '<CRED_FILE>'
 
         connect = json.loads(open(str(conn_location + '/' + credential_file)).read())
 
