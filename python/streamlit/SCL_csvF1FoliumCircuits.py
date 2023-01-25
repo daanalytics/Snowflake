@@ -71,7 +71,7 @@ def load_data(map_type):
     global df_qo_f1_circuits
     
     #Load Data
-    df_qo_f1_circuits = pd.read_csv('data/F1Circuits.csv')
+    df_qo_f1_circuits = pd.read_csv('https://raw.githubusercontent.com/daanalytics/Snowflake/master/python/streamlit/data/F1Circuits.csv')
 
     # Add Continent to df_f1_circuits DataFrame
     df_qo_f1_circuits['CONTINENT'] = df_qo_f1_circuits['COUNTRY'].apply(country_convert)
