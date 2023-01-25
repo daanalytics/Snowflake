@@ -62,7 +62,7 @@ def marker_color(continent_name):
         color = 'grey'
     return color    
 
-def load_data(cur, map_type):
+def load_data(map_type):
 
     global df_f1_con_circuits 
 
@@ -71,10 +71,7 @@ def load_data(cur, map_type):
     global df_qo_f1_circuits
     
     #Load Data
-    df_continental = pd.read_csv('data/F1Circuits.csv')
-
-    # Convert Query output to a DataFrame
-    df_qo_f1_circuits = cur.fetch_pandas_all()
+    df_qo_f1_circuits = pd.read_csv('data/F1Circuits.csv')
 
     # Add Continent to df_f1_circuits DataFrame
     df_qo_f1_circuits['CONTINENT'] = df_qo_f1_circuits['COUNTRY'].apply(country_convert)
@@ -161,7 +158,7 @@ if __name__ == "__main__":
     ('World', 'Continent', 'Country'))
 
     # Load Data into a DataFrame
-    load_data(cur, map_type)
+    load_data(map_type)
 
     if map_type == 'World':
 
