@@ -47,7 +47,7 @@ if __name__ == "__main__":
     # Set Variables for Snowflake Procedure
     database_name = st.sidebar.text_input('Database Name')
     schema_name = st.sidebar.text_input('Schema Name')
-    table_name = st.sidebar.text_input('Schema Name')
+    table_name = st.sidebar.text_input('Table Name')
 
     # Snowflake Procedure aanroepen wanneer de gebruiker op de knop klikt
     if st.button('Run Quality Assurance'):
