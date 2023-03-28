@@ -34,7 +34,7 @@ def create_sf_session_object():
     return ctx
 
 
-Main code
+#Main code
 if __name__ == "__main__":
     
     # Connect to Snowflake
