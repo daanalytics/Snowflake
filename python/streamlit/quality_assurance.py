@@ -52,21 +52,21 @@ if __name__ == "__main__":
     # Snowflake Procedure aanroepen wanneer de gebruiker op de knop klikt
     if st.sidebar.button('Run Quality Assurance'):
         cursor = ctx.cursor()
-        cursor.execute(f"CALLQUALITY_ASSURANCE.QUALITY_CHECK.DATA_QUALITY('{database_name}', '{schema_name}', '{table_name}')")
+        cursor.execute(f"CALL QUALITY_ASSURANCE.QUALITY_CHECK.DATA_QUALITY('{database_name}', '{schema_name}', '{table_name}')")
         st.sidebar.success('Procedure has been executed successfully.')
         cursor.close()    
 
-    sql_quality_metrics = pd.read_sql("""SELECT *
+        sql_quality_metrics = pd.read_sql("""SELECT *
                                         FROM   QUALITY_ASSURANCE.QUALITY_CHECK.DATA_QUALITY_METRICS
                                         WHERE  FULL_QUAL_TABLE_NAME = """ + database_name + """.""" + schema_name + """.""" + table_name, ctx)
     
-    st.write("Data Quality Metrics for table: " + table_name)
+        st.write("Data Quality Metrics for table: " + table_name)
 
-    df_quality_metrics = pd.DataFrame(sql_quality_metrics, columns=['DATABASE_NAME', 'SCHEMA_NAME', 'TABLE_NAME', 'FULL_QUAL_TABLE_NAME', 'COLUMN_NAME', 'TOTAL_COUNT', 'NOT_NULL_COUNT', 'NULL_COUNT', 'BLANK_COUNT', 'DISTINCT_VALUES_COUNT'
-    , 'MAX_LENGTH', 'MIN_LENGTH', 'MAX_VALUE', 'MIN_VALUE', 'NUMERIC_ONLY_VALUES_COUNT', 'ALPHABETS_ONLY_VALUES_COUNT', 'ALPHANUMERIC_ONLY_VALUES_COUNT'
-    , 'CONTAINS_SPECIAL_CHAR_COUNT', 'TOP_TEN_DISTINCT_VALUES'])
+        df_quality_metrics = pd.DataFrame(sql_quality_metrics, columns=['DATABASE_NAME', 'SCHEMA_NAME', 'TABLE_NAME', 'FULL_QUAL_TABLE_NAME', 'COLUMN_NAME', 'TOTAL_COUNT', 'NOT_NULL_COUNT', 'NULL_COUNT', 'BLANK_COUNT', 'DISTINCT_VALUES_COUNT'
+        , 'MAX_LENGTH', 'MIN_LENGTH', 'MAX_VALUE', 'MIN_VALUE', 'NUMERIC_ONLY_VALUES_COUNT', 'ALPHABETS_ONLY_VALUES_COUNT', 'ALPHANUMERIC_ONLY_VALUES_COUNT'
+        , 'CONTAINS_SPECIAL_CHAR_COUNT', 'TOP_TEN_DISTINCT_VALUES'])
 
-    st.table(df_quality_metrics)
+        st.table(df_quality_metrics)
 
     
 
