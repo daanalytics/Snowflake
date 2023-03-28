@@ -58,8 +58,8 @@ if __name__ == "__main__":
 
         sql_quality_metrics = pd.read_sql("""SELECT *
                                         FROM   QUALITY_ASSURANCE.QUALITY_CHECK.DATA_QUALITY_METRICS
-                                        WHERE  FULL_QUAL_TABLE_NAME = """ + database_name + """.""" + schema_name + """.""" + table_name, ctx)
-    
+                                        WHERE  FULL_QUAL_TABLE_NAME =  "{database_name}" . "{schema_name}" . "{table_name}" """, ctx)
+     
         st.write("Data Quality Metrics for table: " + table_name)
 
         df_quality_metrics = pd.DataFrame(sql_quality_metrics, columns=['DATABASE_NAME', 'SCHEMA_NAME', 'TABLE_NAME', 'FULL_QUAL_TABLE_NAME', 'COLUMN_NAME', 'TOTAL_COUNT', 'NOT_NULL_COUNT', 'NULL_COUNT', 'BLANK_COUNT', 'DISTINCT_VALUES_COUNT'
