@@ -50,7 +50,7 @@ if __name__ == "__main__":
     table_name = st.sidebar.text_input('Table Name')
 
     # Snowflake Procedure aanroepen wanneer de gebruiker op de knop klikt
-    if st.button('Run Quality Assurance'):
+    if st.sidebar.button('Run Quality Assurance'):
         cursor = ctx.cursor()
         cursor.execute(f"CALLQUALITY_ASSURANCE.QUALITY_CHECK.DATA_QUALITY('{database_name}', '{schema_name}', '{table_name}')")
         st.sidebar.success('Procedure has been executed successfully.')
@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
     sql_quality_metrics = pd.read_sql("""SELECT *
                                         FROM   QUALITY_ASSURANCE.QUALITY_CHECK.DATA_QUALITY_METRICS
-                                        WHERE  FULL_QUAL_TABLE_NAME = """ + database_name + '.' + schema_name + '.' + table_name, ctx)
+                                        WHERE  FULL_QUAL_TABLE_NAME = """ + database_name + """.""" + schema_name + """.""" + table_name, ctx)
     
     st.write("Data Quality Metrics for table: " + table_name)
 
