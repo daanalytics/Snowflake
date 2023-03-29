@@ -12,6 +12,23 @@ st.set_page_config(
     }
 )
 
+st.title('Snowflake database objects Quality Assurance')
+
+st.markdown('**Total Count:** Total number of rows present in a table.')
+st.markdown('**Not Null Count:** The number of rows in the column with a non-null value.')
+st.markdown('**Null Count:** The number of rows in the column with a null value.')
+st.markdown('**Blank Count:** The number of rows in the column with a blank value.')
+st.markdown('**Distinct Values Count:** The number of distinct values in the column.')
+st.markdown('**Max Value:** The maximum value in the column.')
+st.markdown('**Min Value:** The minimum value in the column.')
+st.markdown('**Max Length:** The maximum length of the values in the column.')
+st.markdown('**Min Length:** The minimum length of the values in the column.')
+st.markdown('**Numeric Values Count** The number of rows in the column with a numeric value.')
+st.markdown('**Alphabetic Values Count:** The number of rows in the column with an alphabetic value.')
+st.markdown('**Alphanumeric Values Count:** The number of rows in the column with an alphanumeric value.')
+st.markdown('**Special Characters Values Count:** The number of rows in the column which contains special characters.')
+st.markdown('**Top 10 Distinct Values:** The top 10 most common distinct values in the column.')
+
 # Initialize connection.
 # Uses st.experimental_singleton to only run once.
 @st.experimental_singleton
@@ -42,7 +59,7 @@ if __name__ == "__main__":
     cur = ctx.cursor()
 
     # Select Map type to show
-    st.sidebar.title("Select Database Object to examine")
+    st.sidebar.title("Select a table to examine")
 
     # Set Variables for Snowflake Procedure
     database_name = st.sidebar.text_input('Database Name')
@@ -58,10 +75,6 @@ if __name__ == "__main__":
 
         # Where clause for the Fully Qualified Table Name
         wc_full_qual_table_name = database_name + '.' + schema_name + '.' + table_name
-
-        #sql_quality_metrics = pd.read_sql("""SELECT *
-        #                                FROM   QUALITY_ASSURANCE.QUALITY_CHECK.DATA_QUALITY_METRICS
-        #                                WHERE  FULL_QUAL_TABLE_NAME = {wc_full_qual_table_name} """, ctx)
         
         sql_quality_metrics = f"""SELECT *
                                 FROM   QUALITY_ASSURANCE.QUALITY_CHECK.DATA_QUALITY_METRICS
@@ -71,10 +84,6 @@ if __name__ == "__main__":
         st.write("Data Quality Metrics for table: " + table_name)
 
         df_quality_metrics = pd.read_sql_query(sql_quality_metrics, ctx)
-
-        #df_quality_metrics = pd.DataFrame(sql_quality_metrics, columns=['DATABASE_NAME', 'SCHEMA_NAME', 'TABLE_NAME', 'FULL_QUAL_TABLE_NAME', 'COLUMN_NAME', 'TOTAL_COUNT', 'NOT_NULL_COUNT', 'NULL_COUNT', 'BLANK_COUNT', 'DISTINCT_VALUES_COUNT'
-        #, 'MAX_LENGTH', 'MIN_LENGTH', 'MAX_VALUE', 'MIN_VALUE', 'NUMERIC_ONLY_VALUES_COUNT', 'ALPHABETS_ONLY_VALUES_COUNT', 'ALPHANUMERIC_ONLY_VALUES_COUNT'
-        #, 'CONTAINS_SPECIAL_CHAR_COUNT', 'TOP_TEN_DISTINCT_VALUES'])
 
         st.table(df_quality_metrics)
 
