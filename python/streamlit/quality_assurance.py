@@ -71,7 +71,9 @@ if __name__ == "__main__":
 
         st.table(df_quality_metrics)
 
-        st.markdown('**Data Quality Checks**')
+        st.markdown('#### Data Quality Metrics')
+
+        st.markdown('[Data Quality in Snowflake](https://medium.com/@suranadivyar13/data-quality-framework-in-snowflake-fd57f9931c5 "Data Quality in Snowflake by Divya Rajesh Surana").')
 
         st.markdown('**Total Count:** Total number of rows present in a table.')
         st.markdown('**Not Null Count:** The number of rows in the column with a non-null value.')
