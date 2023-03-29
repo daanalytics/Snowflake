@@ -61,7 +61,7 @@ if __name__ == "__main__":
 
         sql_quality_metrics = pd.read_sql("""SELECT *
                                         FROM   QUALITY_ASSURANCE.QUALITY_CHECK.DATA_QUALITY_METRICS
-                                        WHERE  FULL_QUAL_TABLE_NAME = "{wc_full_qual_table_name}" """, ctx)
+                                        WHERE  FULL_QUAL_TABLE_NAME = {wc_full_qual_table_name} """, ctx)
      
         st.write("Data Quality Metrics for table: " + table_name)
 
