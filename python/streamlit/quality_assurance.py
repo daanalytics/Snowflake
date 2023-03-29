@@ -14,21 +14,6 @@ st.set_page_config(
 
 st.title('Snowflake database objects Quality Assurance')
 
-st.markdown('**Total Count:** Total number of rows present in a table.')
-st.markdown('**Not Null Count:** The number of rows in the column with a non-null value.')
-st.markdown('**Null Count:** The number of rows in the column with a null value.')
-st.markdown('**Blank Count:** The number of rows in the column with a blank value.')
-st.markdown('**Distinct Values Count:** The number of distinct values in the column.')
-st.markdown('**Max Value:** The maximum value in the column.')
-st.markdown('**Min Value:** The minimum value in the column.')
-st.markdown('**Max Length:** The maximum length of the values in the column.')
-st.markdown('**Min Length:** The minimum length of the values in the column.')
-st.markdown('**Numeric Values Count** The number of rows in the column with a numeric value.')
-st.markdown('**Alphabetic Values Count:** The number of rows in the column with an alphabetic value.')
-st.markdown('**Alphanumeric Values Count:** The number of rows in the column with an alphanumeric value.')
-st.markdown('**Special Characters Values Count:** The number of rows in the column which contains special characters.')
-st.markdown('**Top 10 Distinct Values:** The top 10 most common distinct values in the column.')
-
 # Initialize connection.
 # Uses st.experimental_singleton to only run once.
 @st.experimental_singleton
@@ -56,6 +41,23 @@ if __name__ == "__main__":
     # Connect to Snowflake
     ctx = create_sf_session_object()
     cur = ctx.cursor()
+
+    st.text('**Data Quality Checks**')
+
+    st.sidebar.markdown('**Total Count:** Total number of rows present in a table.')
+    st.sidebar.markdown('**Not Null Count:** The number of rows in the column with a non-null value.')
+    st.sidebar.markdown('**Null Count:** The number of rows in the column with a null value.')
+    st.sidebar.markdown('**Blank Count:** The number of rows in the column with a blank value.')
+    st.sidebar.markdown('**Distinct Values Count:** The number of distinct values in the column.')
+    st.sidebar.markdown('**Max Value:** The maximum value in the column.')
+    st.sidebar.markdown('**Min Value:** The minimum value in the column.')
+    st.sidebar.markdown('**Max Length:** The maximum length of the values in the column.')
+    st.sidebar.markdown('**Min Length:** The minimum length of the values in the column.')
+    st.sidebar.markdown('**Numeric Values Count** The number of rows in the column with a numeric value.')
+    st.sidebar.markdown('**Alphabetic Values Count:** The number of rows in the column with an alphabetic value.')
+    st.sidebar.markdown('**Alphanumeric Values Count:** The number of rows in the column with an alphanumeric value.')
+    st.sidebar.markdown('**Special Characters Values Count:** The number of rows in the column which contains special characters.')
+    st.sidebar.markdown('**Top 10 Distinct Values:** The top 10 most common distinct values in the column.')
 
     # Select Map type to show
     st.sidebar.title("Select a table to examine")
