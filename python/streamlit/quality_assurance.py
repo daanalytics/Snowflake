@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 
 # Setup web page - App Title, Page Title and Page Layout
-APP_TITLE = 'Snowflake database objects Quality Assurance'
+APP_TITLE = 'Snowflake Quality Assurance'
 st.set_page_config(
     page_title='Quality Assurance', 
     layout='wide',
@@ -12,7 +12,7 @@ st.set_page_config(
     }
 )
 
-st.title('Snowflake database objects Quality Assurance')
+st.title('Snowflake Quality Assurance')
 
 # Initialize connection.
 # Uses st.experimental_singleton to only run once.
