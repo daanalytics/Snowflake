@@ -11,16 +11,16 @@ from datetime import datetime
 def main(session: snowpark.Session): 
     # Your code goes here, inside the "main" handler.
 
-    # Create empty list
+    # Create empty list.
     faker_row_output = []
 
-    # Generate fake Customers
+    # Generate fake Customers.
     for i in range(10):
         faker_row_output.append(def_gen_fake_customers()) 
  
     pd_df_fake_customers = pd.DataFrame.from_dict(faker_row_output)
 
-    # Schema for Customer Sample Data 
+    # Schema for Customer Sample Data.
     schema_for_customers = StructType([
                           StructField("ID", IntegerType(), False),
                           StructField("FIRST_NAME", StringType(), False),
@@ -34,10 +34,10 @@ def main(session: snowpark.Session):
                           StructField("BIRTHDATE", DateType(), False)
                         ])
 
-    # Create Snowpark DataFrame
+    # Create Snowpark DataFrame.
     df_fake_customers = session.create_dataframe(pd_df_fake_customers, schema_for_customers)
 
-    # Save table to Snowflake
+    # Save table to Snowflake.
     df_fake_customers.write.mode("overwrite").save_as_table('CUSTOMERS')
 
     # Return value will appear in the Results tab.
