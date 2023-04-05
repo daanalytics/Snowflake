@@ -1,0 +1,412 @@
+[
+  {
+    "Era": "Pre-Transition",
+    "Houses": [
+      {
+        "House": "Austria",
+        "Monarchs": [
+          {
+            "Name": "Felipe II",
+            "Nickname": "el Prudente",
+            "Birth": "1527-05-21",
+            "Start of Reign": "1556-01-16",
+            "End of Reign": "1598-09-13",
+            "Duration": "42 years and 240 days",
+            "Death": "1598-09-13",
+            "Consort\\/Queen Consort": [
+              "Maria I de Inglaterra",
+              "Isabel de Valois",
+              "Ana de Austria"
+            ],
+            "Place of Birth": "Valladolid",
+            "Place of Death": "San Lorenzo de El Escorial",
+            "Age at Time of Death": "71 years",
+            "Burial Place": "Cripta Real del Monasterio de El Escorial"
+          },
+          {
+            "Name": "Felipe III",
+            "Nickname": "el Piadoso",
+            "Birth": "1578-04-14",
+            "Start of Reign": "1598-09-13",
+            "End of Reign": "1621-03-31",
+            "Duration": "22 years and 199 days",
+            "Death": "1621-03-31",
+            "Consort\\/Queen Consort": "Margarita de Austria",
+            "Place of Birth": "Madrid",
+            "Place of Death": "Madrid",
+            "Age at Time of Death": "42 years",
+            "Burial Place": "Cripta Real del Monasterio de El Escorial"
+          },
+          {
+            "Name": "Felipe IV",
+            "Nickname": ["el Grande", "el Rey Planeta"],
+            "Birth": "1605-04-08",
+            "Start of Reign": "1621-03-31",
+            "End of Reign": "1665-09-17",
+            "Duration": "44 years and 170 days",
+            "Death": "1665-09-17",
+            "Consort\\/Queen Consort": [
+              "Isabel de Borbon",
+              "Mariana de Austria"
+            ],
+            "Place of Birth": "Valladolid",
+            "Place of Death": "Madrid",
+            "Age at Time of Death": "60 years",
+            "Burial Place": "Cripta Real del Monasterio de El Escorial"
+          },
+          {
+            "Name": "Carlos II",
+            "Nickname": "el Hechizado",
+            "Birth": "1661-11-06",
+            "Start of Reign": "1665-09-17",
+            "End of Reign": "1700-11-01",
+            "Duration": "35 years and 45 days",
+            "Death": "1700-11-01",
+            "Consort\\/Queen Consort": [
+              "Maria Luisa de Orleans",
+              "Mariana de Neoburgo"
+            ],
+            "Place of Birth": "Madrid",
+            "Place of Death": "Madrid",
+            "Age at Time of Death": "38 years",
+            "Burial Place": "Cripta Real del Monasterio de El Escorial"
+          },
+          {
+            "Name": "Archiduque Carlos",
+            "Nickname": "el Archiduque",
+            "Birth": "1685-10-01",
+            "Start of Reign": "1703-09-12",
+            "End of Reign": "1715-07-02",
+            "Duration": "11 years and 293 days",
+            "Death": "1740-10-20",
+            "Consort\\/Queen Consort":
+              "Isabel Cristina de Brunswick-Wolfenbuttel",
+            "Place of Birth": "Viena",
+            "Place of Death": "Viena",
+            "Age at Time of Death": "55 years",
+            "Burial Place": "Cripta Imperial de Viena"
+          }
+        ]
+      },
+      {
+        "House": "Bonaparte",
+        "Monarchs": [
+          {
+            "Name": "Jose I",
+            "Nickname": ["Pepe Botella", "Pepe Plazuelas", "el Intruso"],
+            "Birth": "1768-01-07",
+            "Start of Reign": "1808-06-06",
+            "End of Reign": "1813-12-11",
+            "Duration": "5 years and 188 days",
+            "Death": "1844-07-28",
+            "Consort\\/Queen Consort": "Julia Clary",
+            "Place of Birth": "Corte",
+            "Place of Death": "Florencia",
+            "Age at Time of Death": "76 years",
+            "Burial Place": "Los Invalidos"
+          }
+        ]
+      },
+      {
+        "House": "Borbon",
+        "Monarchs": [
+          {
+            "Name": "Felipe V",
+            "Nickname": ["el Animoso"],
+            "Birth": "1683-12-19",
+            "Start of Reign": "1700-11-16",
+            "End of Reign": "1724-01-14",
+            "Duration": "23 years and 59 days",
+            "Death": "1746-07-09",
+            "Consort\\/Queen Consort":[
+              "Maria Luisa Gabriela de Saboya",
+              "Isabel de Farnesio"
+            ],
+            "Place of Birth": "Versalles",
+            "Place of Death": "Madrid",
+            "Age at Time of Death": "62 years",
+            "Burial Place": "Palacio Real de la Granja de San Ildefonso"
+          },
+          {
+            "Name": "Luis I",
+            "Nickname": ["el Bien Amado", "el Liberal"],
+            "Birth": "1707-08-25",
+            "Start of Reign": "1724-08-31",
+            "End of Reign": "1724-08-31",
+            "Duration": "230 days",
+            "Death": "1724-08-31",
+            "Consort\\/Queen Consort": "Luisa Isabel de Orleans",
+            "Place of Birth": "Madrid",
+            "Place of Death": "Madrid",
+            "Age at Time of Death": "17 years",
+            "Burial Place": "Cripta Real del Monasterio de El Escorial"
+          },
+          {
+            "Name": "Felipe V",
+            "Nickname": "el Animoso",
+            "Birth": "1683-12-19",
+            "Start of Reign": "1724-09-06",
+            "End of Reign": "1746-07-09",
+            "Duration": "21 years and 306 days",
+            "Death": "1746-07-09",
+            "Consort\\/Queen Consort": "Isabel de Farnesio",
+            "Place of Birth": "Versalles",
+            "Place of Death": "Madrid",
+            "Age at Time of Death": "62 years",
+            "Burial Place": "Palacio Real de la Granja de San Ildefonso"
+          },
+          {
+            "Name": "Fernando VI",
+            "Nickname": ["el Prudente", "el Justo"],
+            "Birth": "1713-09-23",
+            "Start of Reign": "1746-07-09",
+            "End of Reign": "1759-08-10",
+            "Duration": "13 years and 32 days",
+            "Death": "1759-08-10",
+            "Consort\\/Queen Consort": "Barbara de Braganza",
+            "Place of Birth": "Madrid",
+            "Place of Death": "Villaviciosa de Odon",
+            "Age at Time of Death": "45 years",
+            "Burial Place": "Convento de las Salesas Reales"
+          },
+          {
+            "Name": "Carlos III",
+            "Nickname": ["el Politico", "el Mejor Alcalde de Madrid"],
+            "Birth": "1716-01-20",
+            "Start of Reign": "1759-08-10",
+            "End of Reign": "1788-12-14",
+            "Duration": "29 years and 126 days",
+            "Death": "1788-12-14",
+            "Consort\\/Queen Consort": "Maria Amalia de Sajonia",
+            "Place of Birth": "Madrid",
+            "Place of Death": "Madrid",
+            "Age at Time of Death": "72 years",
+            "Burial Place": "Cripta Real del Monasterio de El Escorial"
+          },
+          {
+            "Name": "Carlos IV",
+            "Nickname": "el Cazador",
+            "Birth": "1748-11-11",
+            "Start of Reign": "1788-12-14",
+            "End of Reign": "1808-03-19",
+            "Duration": "19 years and 96 days",
+            "Death": "1819-01-19",
+            "Consort\\/Queen Consort": "Maria Luisa de Parma",
+            "Place of Birth": "Portici",
+            "Place of Death": "Napoles",
+            "Age at Time of Death": "70 years",
+            "Burial Place": "Cripta Real del Monasterio de El Escorial"
+          },
+          {
+            "Name": "Fernando VII",
+            "Nickname": ["el Deseado", "el Rey Felon"],
+            "Birth": "1784-10-14",
+            "Start of Reign": "1808-08-11",
+            "End of Reign": "1833-09-29",
+            "Duration": "19 years and 148 days",
+            "Death": "1833-09-29",
+            "Consort\\/Queen Consort": [
+              "Maria Isabel de Braganza",
+              "Maria Josefa de Sajonia",
+              "Maria Cristina de Borbon"
+            ],
+            "Place of Birth": "San Lorenzo de El Escorial",
+            "Place of Death": "Madrid",
+            "Age at Time of Death": "48 years",
+            "Burial Place": "Cripta Real del Monasterio de El Escorial"
+          },
+          {
+            "Name": "Isabel II",
+            "Nickname": ["la de los Tristes Destinos", "la Reina Castiza"],
+            "Birth": "1830-10-10",
+            "Start of Reign": "1833-09-29",
+            "End of Reign": "1868-09-30",
+            "Duration": "35 years and 1 dia",
+            "Death": "1904-04-09",
+            "Consort\\/Queen Consort": "Francisco de Asis de Borbon",
+            "Place of Birth": "Madrid",
+            "Place of Death": "Paris",
+            "Age at Time of Death": "73 years",
+            "Burial Place": "Cripta Real del Monasterio de El Escorial"
+          },
+          {
+            "Name": "Alfonso XII",
+            "Nickname": "el Pacificador",
+            "Birth": "1857-11-28",
+            "Start of Reign": "1874-12-29",
+            "End of Reign": "1885-11-25",
+            "Duration": "10 years and 331 days",
+            "Death": "1885-11-25",
+            "Consort\\/Queen Consort": [
+              "Maria de las Mercedes de Orleans",
+              "Maria Cristina de Habsburgo-Lorena"
+            ],
+            "Place of Birth": "Madrid",
+            "Place of Death": "El Pardo",
+            "Age at Time of Death": "27 years",
+            "Burial Place": "Cripta Real del Monasterio de El Escorial"
+          },
+          {
+            "Name": "Alfonso XIII",
+            "Nickname": "el Africano",
+            "Birth": "1886-05-17",
+            "Start of Reign": "1886-05-17",
+            "End of Reign": "1931-04-14",
+            "Duration": "44 years and 332 days",
+            "Death": "1941-02-28",
+            "Consort\\/Queen Consort": "Victoria Eugenia de Battenberg",
+            "Place of Birth": "Madrid",
+            "Place of Death": "Roma",
+            "Age at Time of Death": "54 years",
+            "Burial Place": "Cripta Real del Monasterio de El Escorial"
+          }
+        ]
+      },
+      {
+        "House": "Saboya",
+        "Monarchs": [
+          {
+            "Name": "Amadeo I",
+            "Nickname": ["el Rey Caballero", "el Electo"],
+            "Birth": "1845-05-30",
+            "Start of Reign": "1870-11-16",
+            "End of Reign": "1873-02-11",
+            "Duration": "2 years and 87 days",
+            "Death": "1890-01-18",
+            "Consort\\/Queen Consort": "Maria Victoria dal Pozzo",
+            "Place of Birth": "Turin",
+            "Place of Death": "Turin",
+            "Age at Time of Death": "44 years",
+            "Burial Place": "Basilica de Superga"
+          }
+        ]
+      },
+      {
+        "House": "Trastamara",
+        "Monarchs": [
+          {
+            "Name": "Isabel I de Castilla",
+            "Nickname": "la Catolica",
+            "Birth": "1451-04-22",
+            "Start of Reign": "1474-12-13",
+            "End of Reign": "1504-11-26",
+            "Duration": "29 years and 349 days",
+            "Death": "1504-11-26",
+            "Place of Birth": "Madrigal de las Altas Torres",
+            "Place of Death": "Medina del Campo",
+            "Age at Time of Death": "53 years",
+            "Burial Place": "Capilla Real de Granada"
+          },
+          {
+            "Name": "Fernando V de Castilla",
+            "Nickname": "el Catolico",
+            "Birth": "1452-03-10",
+            "Start of Reign": "1475-01-15",
+            "End of Reign": "1504-11-26",
+            "Duration": "29 years and 316 days",
+            "Death": "1516-01-23",
+            "Place of Birth": "Sos",
+            "Place of Death": "Madrigalejo",
+            "Age at Time of Death": "63 years",
+            "Burial Place": "Capilla Real de Granada"
+          },
+          {
+            "Name": "Fernando II de Aragon",
+            "Nickname": "el Catolico",
+            "Birth": "1452-03-10",
+            "Start of Reign": "1479-01-20",
+            "End of Reign": "1516-01-23",
+            "Duration": "37 years and 3 days",
+            "Death": "1516-01-23",
+            "Consort\\/Queen Consort": "Isabel I de Castilla",
+            "Place of Birth": "Sos",
+            "Place of Death": "Madrigalejo",
+            "Age at Time of Death": "63 years",
+            "Burial Place": "Capilla Real de Granada"
+          },
+          {
+            "Name": "Juana I de Castilla",
+            "Nickname": "la Loca",
+            "Birth": "1479-11-06",
+            "Start of Reign": "1504-11-26",
+            "End of Reign": "1555-04-12",
+            "Duration": "50 years and 137 days",
+            "Death": "1555-04-12",
+            "Consort\\/Queen Consort": "Felipe I de Castilla",
+            "Place of Birth": "Toledo",
+            "Place of Death": "Tordesillas",
+            "Age at Time of Death": "75 years",
+            "Burial Place": "Capilla Real de Granada"
+          },
+          {
+            "Name": "Juana I de Aragon",
+            "Nickname": "la Loca",
+            "Birth": "1479-11-06",
+            "Start of Reign": "1516-01-23",
+            "End of Reign": "1555-04-12",
+            "Duration": "39 years and 79 days",
+            "Death": "1555-04-12",
+            "Place of Birth": "Toledo",
+            "Place of Death": "Tordesillas",
+            "Age at Time of Death": "75 years",
+            "Burial Place": "Capilla Real de Granada"
+          },
+          {
+            "Name": "Felipe I de Castilla",
+            "Nickname": "el Hermoso",
+            "Birth": "1478-06-22",
+            "Start of Reign": "1506-07-12",
+            "End of Reign": "1506-09-25",
+            "Duration": "75 days",
+            "Death": "1506-09-25",
+            "Place of Birth": "Brujas",
+            "Place of Death": "Burgos",
+            "Age at Time of Death": "28 years",
+            "Burial Place": "Capilla Real de Granada"
+          },
+          {
+            "Name": "Carlos I",
+            "Nickname": "el Cesar",
+            "Birth": "1500-02-24",
+            "Start of Reign": "1516-03-14",
+            "End of Reign": "1556-01-16",
+            "Duration": "39 years and 308 days",
+            "Death": "1558-09-21",
+            "Consort\\/Queen Consort": "Isabel de Portugal",
+            "Place of Birth": "Gante",
+            "Place of Death": "Cuacos de Yuste",
+            "Age at Time of Death": "58 years",
+            "Burial Place": "Cripta Real del Monasterio de El Escorial"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Era": "Post-Transition",
+    "Houses": [
+      {
+        "House": "Borbon",
+        "Monarchs": [
+          {
+            "Name": "Juan Carlos I",
+            "Birth": "1938-01-05",
+            "Start of Reign": "1975-11-22",
+            "End of Reign": "2014-06-18",
+            "Duration": "38 years and 192 days",
+            "Consort\\/Queen Consort": "Sofia de Grecia",
+            "Place of Birth": "Roma"
+          },
+          {
+            "Name": "Felipe VI",
+            "Birth": "1968-01-30",
+            "Start of Reign": "2014-06-19",
+            "Duration": "7 years and 140 days",
+            "Consort\\/Queen Consort": "Letizia Ortiz",
+            "Place of Birth": "Madrid"
+          }
+        ]
+      }
+    ]
+  }
+]
