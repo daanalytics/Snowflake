@@ -5,3 +5,4 @@ python/streamlit/_streamlit/secrets.toml
 
 .streamlit/cred.json
 .streamlit/secrets.toml
+.DS_Store
