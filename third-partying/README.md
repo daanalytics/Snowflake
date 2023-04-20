@@ -1,6 +1,6 @@
 # Third-Partying with Snowflake
 
-Find scripts in this folder related to the topic on the **DaAnalytics**-blog; [Third-Partying with Snowflake]( https://daanalytics.nl/third-partying-with-snowflake/).
+Find scripts in this folder related to the topic on the **DaAnalytics**-blog; [Third-Partying with Snowflake]( https://medium.com/@daanalytics/third-partying-with-snowflake-to-get-the-most-out-of-your-cloud-analytics-f2ad6b72f033/).
 
   * **Prepare Snowflake for Alteryx**, based on the **[Snowflake Dataload using Alteryx](https://daanalytics.nl/load-data-into-s…ke-using-alteryx/)**-blog
 
