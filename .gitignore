@@ -5,4 +5,7 @@ python/streamlit/_streamlit/secrets.toml
 
 .streamlit/cred.json
 .streamlit/secrets.toml
+<<<<<<< HEAD
 .DS_Store
+=======
+>>>>>>> c077cda (Restore Snowflake Repo)

@@ -1,0 +1,83 @@
+-- Use SECURITYADMIN role
+USE ROLE SECURITYADMIN
+;
+
+-- Create user - RMURPHY - ACCOUNTADMIN
+CREATE USER RMURPHY
+PASSWORD = '12BeSecure'
+COMMENT = 'Nutthouse - Account Admin'
+EMAIL = 'rmurphy@nutthouse.com'
+LOGIN_NAME = 'RMURPHY' 
+DISPLAY_NAME = 'R.P. McMurphy'
+MUST_CHANGE_PASSWORD = TRUE
+EXT_AUTHN_DUO = TRUE
+DISABLE_MFA = FALSE
+;
+
+-- Grant ACCOUNTADMIN role
+GRANT ROLE ACCOUNTADMIN TO USER RMURPHY
+
+-- Create user - CBROMDEN - ACCOUNTADMIN
+CREATE USER CBROMDEN
+PASSWORD = '12BeSecure'
+COMMENT = 'Nutthouse - Additional Account Admin'
+EMAIL = 'cbromden@nutthouse.com'
+LOGIN_NAME = 'CBROMDEN' 
+DISPLAY_NAME = 'Chief Bromden'
+MUST_CHANGE_PASSWORD = TRUE
+EXT_AUTHN_DUO = TRUE
+DISABLE_MFA = FALSE
+;
+
+-- Grant ACCOUNTADMIN role
+GRANT ROLE ACCOUNTADMIN TO USER CBROMDEN
+
+-- Create user - RMATCHED - SECURITYADMIN
+CREATE USER RMATCHED
+PASSWORD = '12BeSecure'
+COMMENT = 'Nutthouse - Security Admin'
+EMAIL = 'rmatched@nutthouse.com'
+LOGIN_NAME = 'RMATCHED' 
+DISPLAY_NAME = 'Nurse Mildred Ratched'
+MUST_CHANGE_PASSWORD = TRUE
+;
+
+-- Create user - RMURPHY - ACCOUNTADMIN
+CREATE USER RMURPHY
+PASSWORD = '12BeSecure'
+COMMENT = 'Nutthouse - Account Admin'
+EMAIL = 'rmurphy@nutthouse.com'
+LOGIN_NAME = 'RMURPHY' 
+DISPLAY_NAME = 'R.P. McMurphy'
+MUST_CHANGE_PASSWORD = TRUE
+;
+
+-- Create user - MARTINI - DBA
+CREATE USER MARTINI
+PASSWORD = '12BeSecure'
+COMMENT = 'Nutthouse - DBA'
+EMAIL = 'martini@nutthouse.com'
+LOGIN_NAME = 'MARTINI' 
+DISPLAY_NAME = 'Martini'
+MUST_CHANGE_PASSWORD = TRUE
+;
+
+-- Create user - HARDING - Developer
+CREATE USER HARDING
+PASSWORD = '12BeSecure'
+COMMENT = 'Nutthouse - Developer'
+EMAIL = 'harding@nutthouse.com'
+LOGIN_NAME = 'HARDING' 
+DISPLAY_NAME = 'Harding'
+MUST_CHANGE_PASSWORD = TRUE
+;
+
+-- Create user - TABER - Analyst
+CREATE USER TABER
+PASSWORD = '12BeSecure'
+COMMENT = 'Nutthouse - Analyst'
+EMAIL = 'taber@nutthouse.com'
+LOGIN_NAME = 'TABER' 
+DISPLAY_NAME = 'Taber'
+MUST_CHANGE_PASSWORD = TRUE
+;
