@@ -1,6 +1,8 @@
 # Ask ChatGPT Anything
 
-These scripts will support you in creating the Snowflake in Streamlit (SiS) application; **"Ask ChatGPT Anything"**
+These scripts will support you in creating the Snowflake in Streamlit (SiS) application; **"Ask ChatGPT Anything"**. The goal of this blog is to take the previous blog and go for Streamlit in Snowflake (SiS, currently in Public Preview on AWS), still using the OpenAI API to send prompts, constructed using the 5W1H Method, to ChatGPT.
+
+The creation of this application is outlined on my [DaAnalytic blog](https://medium.daanalytics.nl/asking-chatgpt-anything-using-streamlit-in-snowflake-and-the-5w1h-method-54ac8db5d333)
 
 ![Snowflake in Streamlit](https://github.com/daanalytics/snowflake/blob/master/pictures/Streamlit%20in%20Snowflake.webp)
 
@@ -8,10 +10,11 @@ These scripts will support you in creating the Snowflake in Streamlit (SiS) appl
 
 To create this application we need to perfom a series of steps. First we need to create Snowflake in Streamlit objects. Next, we setup the OpenAI integration, after which we can need to setup Streamlit in Snowflake. When all this is in place, we can finally create the 'Ask ChatGPT Anything' application in Streamlit in Snowflake.
 
-1. [Create Snowflake in Streamlit objects]()
+1. [Create Snowflake in Streamlit objects](https://github.com/daanalytics/Snowflake/blob/master/python/streamlit/AskChatGPTAnything/Create_SIS_objects.sql)
 
-2. [Setup the OpenAI Integration]()
+2. [Setup the OpenAI Integration](https://github.com/daanalytics/Snowflake/blob/master/python/streamlit/AskChatGPTAnything/Create_OpenAI_Integration.sql)
 
-3. [Setup Snowflake in Streamlit]()
+3. [Building the Streamlit Application](https://github.com/daanalytics/Snowflake/blob/master/python/streamlit/AskChatGPTAnything/ask_chatgpt_anything.py)
 
-4. [Building the Streamlit Application]()
+4. [Setup Snowflake in Streamlit](https://github.com/daanalytics/Snowflake/blob/master/python/streamlit/AskChatGPTAnything/Create_SIS_application.sql)
+    a. [environment.yml](https://github.com/daanalytics/Snowflake/blob/master/python/streamlit/AskChatGPTAnything/environment.yml)
