@@ -2,7 +2,7 @@
 
 These scripts will support you in creating the Snowflake in Streamlit (SiS) application; **"Ask ChatGPT Anything"**
 
-![Snowflake in Streamlit](https://github.com/daanalytics/snowflake/blob/master/pictures/Streamlit in Snowflake.webp)
+![Snowflake in Streamlit](https://github.com/daanalytics/snowflake/blob/master/pictures/Streamlit%20in%20Snowflake.webp)
 
 ## Table of contents
 
