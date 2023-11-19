@@ -17,4 +17,4 @@ To create this application we need to perfom a series of steps. First we need to
 3. [Building the Streamlit Application](https://github.com/daanalytics/Snowflake/blob/master/python/streamlit/AskChatGPTAnything/ask_chatgpt_anything.py)
 
 4. [Setup Snowflake in Streamlit](https://github.com/daanalytics/Snowflake/blob/master/python/streamlit/AskChatGPTAnything/Create_SIS_application.sql)
-    a. [environment.yml](https://github.com/daanalytics/Snowflake/blob/master/python/streamlit/AskChatGPTAnything/environment.yml)
+    1. [environment.yml](https://github.com/daanalytics/Snowflake/blob/master/python/streamlit/AskChatGPTAnything/environment.yml)
