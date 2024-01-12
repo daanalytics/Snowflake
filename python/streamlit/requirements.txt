@@ -2,7 +2,7 @@
 #snowflake-connector-python==2.8.3
 snowflake-connector-python[pandas]
 pyarrow<8.1.0,>=8.0.0
-streamlit==1.15.2
+streamlit==1.30.0
 #pandas==1.5.2
 numpy==1.23.0
 folium==0.14.0
