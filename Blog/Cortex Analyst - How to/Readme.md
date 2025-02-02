@@ -6,7 +6,7 @@ It consists of the following elements
 
 - Setup a Snowflake environment
 - Generate a Sample Sales demo dataset - [link]()
-- Sample Sales Semantic Model specification
+- Sample Sales Semantic Model specification - [link](https://github.com/daanalytics/Snowflake/blob/master/Blog/Cortex%20Analyst%20-%20How%20to/Sample_Sales_SMN.yaml)
 - Cortex Analyst - Sample Sales Chat App (Streamlit)
 
 
