@@ -1,6 +1,7 @@
 # How to use Cortex Analyst
 
 This code can be used as reference to the blogpost; <link Medium to blogpost>
+
 It consists of the following elements
 
 - Setup a Snowflake environment
