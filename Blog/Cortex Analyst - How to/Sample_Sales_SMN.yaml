@@ -1,0 +1,451 @@
+name: Sample_Sales_SMN
+tables:
+  - name: CUSTOMERS
+    description: The table contains records of customer information. Each record represents
+      an individual customer and includes details such as their name, contact information,
+      and country of residence.
+    base_table:
+      database: SAMPLE_DATA
+      schema: SAMPLE_SALES
+      table: CUSTOMERS
+    primary_key:
+      columns:
+        - CUSTOMER_ID
+    dimensions:
+      - name: CUSTOMER_ID
+        synonyms:
+          - '  '
+        description: Unique identifier for each customer record.
+        expr: CUSTOMER_ID
+        data_type: NUMBER
+        sample_values:
+          - '1'
+          - '2'
+          - '3'
+      - name: FIRST_NAME
+        synonyms:
+          - '  '
+        description: The first name of the customer.
+        expr: FIRST_NAME
+        data_type: TEXT
+        sample_values:
+          - Kaylee
+          - John
+          - Richard
+      - name: LAST_NAME
+        synonyms:
+          - '  '
+        description: Last names of customers.
+        expr: LAST_NAME
+        data_type: TEXT
+        sample_values:
+          - Scott
+          - Campbell
+          - Ross
+      - name: EMAIL
+        synonyms:
+          - '  '
+        description: Email addresses of customers.
+        expr: EMAIL
+        data_type: TEXT
+        sample_values:
+          - rbrooks@example.net
+          - lsimmons@example.org
+          - zdaniel@example.net
+      - name: PHONE_NUMBER
+        synonyms:
+          - '  '
+        description: Collection of customer phone numbers in various formats, including
+          country codes and extensions.
+        expr: PHONE_NUMBER
+        data_type: TEXT
+        sample_values:
+          - 001-297-818-8662
+          - 488-452-2628x078
+          - 001-526-887-4361x776
+      - name: COUNTRY
+        synonyms:
+          - '  '
+        description: The names of the countries where customers reside.
+        expr: COUNTRY
+        data_type: TEXT
+        sample_values:
+          - Kenya
+          - United States Minor Outlying Islands
+          - Argentina
+      - name: CITY
+        synonyms:
+          - '  '
+        description: Names of cities where customers reside.
+        expr: CITY
+        data_type: TEXT
+        sample_values:
+          - Sherryberg
+          - Jessicaland
+          - Pamelachester
+      - name: GENDER
+        synonyms:
+          - '  '
+        description: The gender identification of the customer.
+        expr: GENDER
+        data_type: TEXT
+        sample_values:
+          - F
+          - Other
+          - M
+    time_dimensions:
+      - name: BIRTH_DATE
+        synonyms:
+          - '  '
+        description: Birth dates of customers.
+        expr: BIRTH_DATE
+        data_type: DATE
+        sample_values:
+          - '2000-02-05'
+          - '1994-02-16'
+          - '1977-08-29'
+  - name: PRODUCTS
+    description: The table contains records of various products, each record including
+      the product's unique identifier, name, category, brand, and price.
+    base_table:
+      database: SAMPLE_DATA
+      schema: SAMPLE_SALES
+      table: PRODUCTS
+    primary_key:
+      columns:
+        - PRODUCT_ID
+    dimensions:
+      - name: PRODUCT_ID
+        synonyms:
+          - '  '
+        description: Unique identifier for each product.
+        expr: PRODUCT_ID
+        data_type: NUMBER
+        sample_values:
+          - '1'
+          - '2'
+          - '3'
+      - name: PRODUCT_NAME
+        synonyms:
+          - '  '
+        description: The names of the products being sold.
+        expr: PRODUCT_NAME
+        data_type: TEXT
+        sample_values:
+          - end
+          - even
+          - laugh
+      - name: CATEGORY
+        synonyms:
+          - '  '
+        description: The product category.
+        expr: CATEGORY
+        data_type: TEXT
+        sample_values:
+          - Toys
+          - Electronics
+          - Groceries
+      - name: BRAND
+        synonyms:
+          - '  '
+        description: The column represents the brand name as a string.
+        expr: BRAND
+        data_type: TEXT
+        sample_values:
+          - Schmidt, Terrell and York
+          - Moore-Mann
+          - Paul, Huynh and Roberts
+    measures:
+      - name: PRICE
+        synonyms:
+          - '  '
+        description: The price of the product in the given currency.
+        expr: PRICE
+        data_type: FLOAT
+        sample_values:
+          - '119.87'
+          - '188.97'
+          - '230.02'
+  - name: SALES_FACT
+    description: The table contains records of sales transactions. Each record represents
+      a single sale and includes details about the quantity and total amount, as well
+      as identifiers for the customer, store, and product involved.
+    base_table:
+      database: SAMPLE_DATA
+      schema: SAMPLE_SALES
+      table: SALES_FACT
+    primary_key:
+      columns:
+        - SALE_ID
+    dimensions:
+      - name: SALE_ID
+        synonyms:
+          - '  '
+        description: Unique identifier for each sales transaction.
+        expr: SALE_ID
+        data_type: TEXT
+        sample_values:
+          - b4a3b6a2-aa85-4201-9f4c-934e6e3b9602
+          - 7ad9c938-571b-446e-979c-8c5c7417d40e
+          - 972785b2-29cb-452c-84c1-e025eaa6d9b6
+      - name: DATE_ID
+        synonyms:
+          - '  '
+        description: Unique identifier representing a date in the sales data.
+        expr: DATE_ID
+        data_type: NUMBER
+        sample_values:
+          - '1745'
+          - '424'
+          - '1703'
+      - name: CUSTOMER_ID
+        synonyms:
+          - '  '
+        description: Unique identifier for each customer in the sales transaction
+          data.
+        expr: CUSTOMER_ID
+        data_type: NUMBER
+        sample_values:
+          - '579'
+          - '846'
+          - '738'
+      - name: STORE_ID
+        synonyms:
+          - '  '
+        description: Unique identifier for the store associated with each sales record.
+        expr: STORE_ID
+        data_type: NUMBER
+        sample_values:
+          - '6'
+          - '23'
+          - '68'
+      - name: PRODUCT_ID
+        synonyms:
+          - '  '
+        description: Unique identifier for each product in the sales data.
+        expr: PRODUCT_ID
+        data_type: NUMBER
+        sample_values:
+          - '43'
+          - '209'
+          - '427'
+    measures:
+      - name: QUANTITY
+        synonyms:
+          - '  '
+        description: The quantity of units sold in each sales transaction.
+        expr: QUANTITY
+        data_type: NUMBER
+        sample_values:
+          - '10'
+          - '9'
+          - '4'
+      - name: TOTAL_AMOUNT
+        synonyms:
+          - '  '
+        description: The total amount of sales in the transaction, measured in currency
+          units.
+        expr: TOTAL_AMOUNT
+        data_type: FLOAT
+        sample_values:
+          - '329.64'
+          - '598.36'
+          - '306.68'
+  - name: STORES
+    description: The table contains records of retail stores, each record representing
+      a unique store with details such as store name, region, country, and store type.
+    base_table:
+      database: SAMPLE_DATA
+      schema: SAMPLE_SALES
+      table: STORES
+    primary_key:
+      columns:
+        - STORE_ID
+    dimensions:
+      - name: STORE_ID
+        synonyms:
+          - '  '
+        description: Unique identifier for each store.
+        expr: STORE_ID
+        data_type: NUMBER
+        sample_values:
+          - '1'
+          - '2'
+          - '3'
+      - name: STORE_NAME
+        synonyms:
+          - '  '
+        description: Names of the stores.
+        expr: STORE_NAME
+        data_type: TEXT
+        sample_values:
+          - Warren PLC
+          - Harris-Franklin
+          - Ortiz Group
+      - name: REGION
+        synonyms:
+          - '  '
+        description: The region or geographical area to which the store belongs.
+        expr: REGION
+        data_type: TEXT
+        sample_values:
+          - New Hampshire
+          - Vermont
+          - Virginia
+      - name: COUNTRY
+        synonyms:
+          - '  '
+        description: The names of the countries where the stores are located.
+        expr: COUNTRY
+        data_type: TEXT
+        sample_values:
+          - Falkland Islands (Malvinas)
+          - Peru
+          - Guinea-Bissau
+      - name: STORE_TYPE
+        synonyms:
+          - '  '
+        description: The type of store location, categorized as rural, suburban, or
+          urban.
+        expr: STORE_TYPE
+        data_type: TEXT
+        sample_values:
+          - Rural
+          - Suburban
+          - Urban
+  - name: TIME_DIMENSION
+    description: The table contains records of dates, organized into a dimensional
+      model. Each record represents a unique date and includes information such as
+      the year, month, day, weekday, quarter, and a flag indicating whether it is
+      a weekend.
+    base_table:
+      database: SAMPLE_DATA
+      schema: SAMPLE_SALES
+      table: TIME_DIMENSION
+    primary_key:
+      columns:
+        - DATE_ID
+    dimensions:
+      - name: DATE_ID
+        synonyms:
+          - '  '
+        description: Unique identifier representing a date in the format of a decimal
+          number.
+        expr: DATE_ID
+        data_type: NUMBER
+        sample_values:
+          - '1'
+          - '2'
+          - '3'
+      - name: YEAR
+        synonyms:
+          - '  '
+        description: The year as a decimal value.
+        expr: YEAR
+        data_type: NUMBER
+        sample_values:
+          - '2020'
+          - '2021'
+          - '2022'
+      - name: MONTH
+        synonyms:
+          - '  '
+        description: Numeric representation of the month in a year.
+        expr: MONTH
+        data_type: NUMBER
+        sample_values:
+          - '1'
+          - '2'
+          - '3'
+      - name: DAY
+        synonyms:
+          - '  '
+        description: Numeric representation of the day in the month.
+        expr: DAY
+        data_type: NUMBER
+        sample_values:
+          - '23'
+          - '24'
+          - '25'
+      - name: QUARTER
+        synonyms:
+          - '  '
+        description: Numerical representation of the quarter in a year (1-4).
+        expr: QUARTER
+        data_type: NUMBER
+        sample_values:
+          - '1'
+          - '2'
+          - '3'
+      - name: WEEKDAY
+        synonyms:
+          - '  '
+        description: The day of the week represented as a string.
+        expr: WEEKDAY
+        data_type: TEXT
+        sample_values:
+          - Thursday
+          - Friday
+          - Saturday
+      - name: IS_WEEKEND
+        synonyms:
+          - '  '
+        description: Indicator of whether the day is a weekend or not.
+        expr: IS_WEEKEND
+        data_type: BOOLEAN
+        sample_values:
+          - 'False'
+          - 'True'
+    time_dimensions:
+      - name: DATE
+        synonyms:
+          - '  '
+        description: The column represents dates.
+        expr: DATE
+        data_type: DATE
+        sample_values:
+          - '2020-01-23'
+          - '2020-01-24'
+          - '2020-01-25'
+relationships:
+  - name: CustomerSales
+    left_table: SALES_FACT
+    right_table: CUSTOMERS
+    join_type: inner
+    relationship_type: many_to_one
+    relationship_columns:
+      - left_column: CUSTOMER_ID
+        right_column: CUSTOMER_ID
+  - name: ProductSales
+    left_table: SALES_FACT
+    right_table: PRODUCTS
+    join_type: inner
+    relationship_type: many_to_one
+    relationship_columns:
+      - left_column: PRODUCT_ID
+        right_column: PRODUCT_ID
+  - name: StoreSales
+    left_table: SALES_FACT
+    right_table: STORES
+    join_type: inner
+    relationship_type: many_to_one
+    relationship_columns:
+      - left_column: STORE_ID
+        right_column: STORE_ID
+  - name: PeriodSales
+    left_table: SALES_FACT
+    right_table: TIME_DIMENSION
+    join_type: inner
+    relationship_type: many_to_one
+    relationship_columns:
+      - left_column: DATE_ID
+        right_column: DATE_ID
+verified_queries:
+  - name: Top 5 customers by total spending
+    question: What are the top 5 customers by total spending
+    sql: SELECT customers.customer_id, customers.first_name, customers.last_name,
+      SUM(sales_fact.total_amount) AS total_spent FROM __sales_fact JOIN customers
+      ON sales_fact.customer_id = customers.customer_id GROUP BY customers.customer_id,
+      customers.first_name, customers.last_name ORDER BY total_spent DESC LIMIT 5;
+    verified_at: '1714752498'
+    verified_by: daanalytics
